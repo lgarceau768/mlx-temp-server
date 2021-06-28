@@ -1,0 +1,14 @@
+{
+  "name": "temp_reader_web",
+  "version": "1.0.0",
+  "description": "Temp Server for Controlling with Requests",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luke Garceau",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
