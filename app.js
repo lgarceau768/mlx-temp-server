@@ -28,18 +28,22 @@ const startPythonReader = () => {
 app.get("/restart", (req, res) => {
     stopPython();
     startPythonReader();
+    app.send({"success": true})
 })
 
 app.get("/stop", (req, res) => {
     stopPython();
+    app.send({"success": true})
 })
 
 app.get("/start_reader", (req, res) => {
     startPythonReader();
+    app.send({"success": true})
 })
 
 app.get("/start_server", (req, res) => {
     startWebServer();
+    app.send({"success": true})
 })
 
 app.listen(PORT, () => console.log(`Temp Controller Server listening on ${PORT}`))
